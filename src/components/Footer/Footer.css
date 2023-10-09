@@ -1,0 +1,19 @@
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: black;
+  gap: 50px;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-link img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}

@@ -39,3 +39,17 @@
   font-size: 16px;
   color: #333;
 }
+
+.selected-service__button {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.selected-service__button:hover {
+  background-color: #dd5500;
+}

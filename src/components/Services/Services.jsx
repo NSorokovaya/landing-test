@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Services.css';
+import './Services.module.css';
 const Services = () => {
   const [selectedService, setSelectedService] = useState(null);
 
@@ -36,7 +36,7 @@ const Services = () => {
 
   return (
   <div className="services">
-    <h2>Послуги</h2>
+    <h2>Services</h2>
     <ul className='services__title'>
       {servicesData.map((service, index) => (
         <li key={index} onClick={() => handleClick(service)} className="services__item">
@@ -48,7 +48,8 @@ const Services = () => {
     {selectedService && (
       <div className="selected-service">
         <h3 className='selected-service__title'>{selectedService.title}</h3>
-        <p className='selected-service__description'>{selectedService.description}</p>
+          <p className='selected-service__description'>{selectedService.description}</p>
+          <button className="selected-service__button">Want</button>
       </div>
     )}
   </div>
