@@ -1,13 +1,12 @@
 import React from 'react';
-import './WhyUs.css'; // Ваші стилі
+import './WhyUs.css'; 
 
- const WhyUs = () => {
+ export const WhyUs = () => {
   return (
     <div className="why-us">
       <h2>Why Choose Us</h2>
-      <p>We are a team of experts dedicated to...</p>
+      <h3>Our IT solutions in reliable hands</h3>
     </div>
   );
 };
 
-export default WhyUs;
