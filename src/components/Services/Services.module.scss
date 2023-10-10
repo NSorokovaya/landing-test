@@ -1,9 +1,14 @@
 .services {
-  max-width: 800px;
-  margin: 0 auto;
+  background-color: rgb(85, 90, 90, 0.4);
+  border-radius: 38px;
+  border: transparent;
 }
 
 .servicesTitle {
+  display: flex;
+  background-color: rgb(255, 102, 0, 0.4);
+  border-bottom-right-radius: 38px;
+
   list-style-type: none;
   padding: 0;
 }
@@ -15,11 +20,13 @@
 }
 
 .servicesItem:hover {
-  color: #ff6600;
+  font-size: 24px;
+
+  color: rgba(255, 255, 255);
 }
 
 .selectedService {
-  margin-top: 30px;
+  margin-top: 24px;
   border-top: 1px solid #ccc;
   padding-top: 20px;
 }

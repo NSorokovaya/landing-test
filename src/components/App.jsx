@@ -14,7 +14,7 @@ export const App = () => {
       <ServicesTab />
       <ContactForm />
       <FAQ/>
-        <Footer />
+      <Footer />
     </div>
   );
 };

@@ -31,7 +31,7 @@ const Portfolio = () => {
   ];
 
   const settings = {
-    dots: true,
+
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -45,7 +45,7 @@ const Portfolio = () => {
 
   return (
     <div className={style.portfolio}>
-      <Title text='Portfolio' />
+      <Title text='PORTFOLIO' />
       <Slider {...settings}>
         {sliderItems.map((item, index) => (
           <div key={index} className={style.sliderItem}>
