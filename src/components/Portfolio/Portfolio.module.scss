@@ -1,7 +1,39 @@
+.portfolio {
+  max-width: 95%; /* Максимальна ширина контейнера */
+  margin: 0 auto; /* Центруємо його по горизонталі */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
 .sliderItem {
-  /* Ваші стилі для слайдів */
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 .sliderDescription {
-  /* Ваші стилі для опису слайду */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s, transform 0.5s;
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+.sliderItem:hover .sliderDescription {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -6,6 +6,8 @@ import style from'./Portfolio.module.scss';
 import Slide1 from '../../images/slide1.png';
 import Slide2 from '../../images/slide2.png';
 import Slide3 from '../../images/slide3.png';
+import Title from '../Title/Title'
+
 
 
 const Portfolio = () => {
@@ -25,31 +27,37 @@ const Portfolio = () => {
       title: 'Delivery Service',
       description: ' Iren Banquet Hall - Delivery service for tasty food from Iren. You can register, order and pay not leaving the website. ',
     },
+    
   ];
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+        centerMode: true,
+    centerPadding: "100px",
+
   };
 
   return (
-    <Slider {...settings}>
-      {sliderItems.map((item, index) => (
-        <div key={index}>
-          <div className={style.sliderItem}>
+    <div className={style.portfolio}>
+      <Title text='Portfolio' />
+      <Slider {...settings}>
+        {sliderItems.map((item, index) => (
+          <div key={index} className={style.sliderItem}>
             <img src={item.imageSrc} alt={item.title} />
+            <div className={style.sliderDescription}>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </div>
           </div>
-          <div className={style.sliderDescription}>
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
-          </div>
-        </div>
-      ))}
-    </Slider>
+        ))}
+      </Slider>
+    </div>
   );
 };
 
