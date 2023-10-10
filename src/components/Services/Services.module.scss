@@ -3,18 +3,21 @@
   border-radius: 38px;
   border: transparent;
   padding: 5px 10px;
-  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
 }
 
 .servicesTitle {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(255, 102, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   border-bottom-right-radius: 38px;
   border-bottom-left-radius: 38px;
-
+  margin-bottom: 20px;
   list-style-type: none;
   padding: 0;
+  font-weight: bold;
 }
 
 .servicesItem {
@@ -22,25 +25,27 @@
   border-radius: 38px;
 
   box-shadow: #ccc;
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  &:hover {
+    background-color: rgba(61, 28, 6, 0.4);
+  }
 }
 
-.servicesItem:hover {
-  background-color: rgb(255, 102, 0, 0.4);
-}
-
-.selectedService {
+.selectedServiceItem {
   margin-top: 24px;
+  margin-bottom: 24px;
+
   border-top: 1px solid #ccc;
   padding-top: 20px;
 }
 
 .selectedServiceTitle {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .selectedServiceDescription {
   font-size: 16px;
+  margin-bottom: 40px;
 }

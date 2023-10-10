@@ -1,6 +1,13 @@
 .header {
   margin-bottom: 70px;
+}
+
+.headerText {
+  margin: 0 auto;
+  margin-top: 25px;
+  font-size: 40px;
+  font-weight: bold;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  padding: 200px;
 }

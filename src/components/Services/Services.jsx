@@ -3,7 +3,6 @@ import style from'./Services.module.scss';
 import Title from 'components/Title/Title';
 import Button  from 'components/Button/Button';
 const Services = () => {
-  const [selectedService, setSelectedService] = useState(null);
 
   const servicesData = [
     {
@@ -31,6 +30,7 @@ const Services = () => {
       description: 'We offer website transferring services for clients who want to move their website from one platform to another. Our team of developers can ensure that the transition is smooth and seamless, and that the website remains fully functional throughout the process. Our goal is to minimize any disruptions to our clients online presence and ensure that their website continues to meet their business needs.',
     },
   ];
+  const [selectedService, setSelectedService] = useState(servicesData[0]); // Встановлюємо перший сервіс за умовчанням
 
   const handleClick = (service) => {
     setSelectedService(service);
@@ -50,13 +50,12 @@ const Services = () => {
     </ul>
 
     {selectedService && (
-      <div className={style.selectedServiceItem}>
-        <h3 className={style.selectedServiceTitle}>{selectedService.title}</h3>
-          <p className={style.selectedServiceDescription}>{selectedService.description}</p>
-              <Button text="Want" onClick={handleClick} />
-
-      </div>
-    )}
+          <div className={style.selectedServiceItem}>
+            <h3 className={style.selectedServiceTitle}>{selectedService.title}</h3>
+            <p className={style.selectedServiceDescription}>{selectedService.description}</p>
+            <Button text="Want"   onClick={handleClick} />
+          </div>
+        )}
         </div>
       </div>
 );
