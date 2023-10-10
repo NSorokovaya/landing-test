@@ -39,10 +39,10 @@ useEffect(() => {
   }
   return (
     <div className={style.contactForm}>
-      <h2>Зворотній зв'язок</h2>
+      <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <div className={style.form}>
-          <label htmlFor="contactMethod">Оберіть метод зв'язку:</label>
+          <label htmlFor="contactMethod">Choose contact method:</label>
           <select
             id="contactMethod"
             name="contactMethod"

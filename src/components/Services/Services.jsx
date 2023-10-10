@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import style from'./Services.module.scss';
+import Title from 'components/Title/Title';
+import Button  from 'components/Button/Button';
 const Services = () => {
   const [selectedService, setSelectedService] = useState(null);
 
@@ -35,8 +37,8 @@ const Services = () => {
   };
 
   return (
-  <div className={style.services}>
-    <h2>Services</h2>
+    <div className={style.services}>
+      <Title text='Services'/>
     <ul className={style.servicesTitle}>
       {servicesData.map((service, index) => (
         <li key={index} onClick={() => handleClick(service)} className={style.servicesItem}>
@@ -49,7 +51,8 @@ const Services = () => {
       <div className={style.selectedServiceItem}>
         <h3 className={style.selectedServiceTitle}>{selectedService.title}</h3>
           <p className={style.selectedServiceDescription}>{selectedService.description}</p>
-          <button className={style.selectedServiceButton}>Want</button> 
+              <Button text="Want" onClick={handleClick} />
+
       </div>
     )}
   </div>
