@@ -6,19 +6,19 @@ const Footer = () => {
   return (
     <div className={style.links}>
       <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className={style.link}>
-        <FaFacebook />
+        <FaFacebook className={style.img}/>
       </a>
       <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className={style.link}>
-        <FaInstagram />
+        <FaInstagram className={style.img}/>
       </a>
       <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer" className={style.link}>
-        <FaTelegram />
+        <FaTelegram className={style.img} />
       </a>
       <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className={style.link}>
-        <FaLinkedin />
+        <FaLinkedin className={style.img} />
       </a>
               <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" className={style.link}>
-        <FaTiktok />
+        <FaTiktok className={style.img}/>
       </a>
     </div>
   );

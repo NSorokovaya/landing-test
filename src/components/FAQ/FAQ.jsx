@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import style from './FAQ.module.scss'
+import Title from 'components/Title/Title';
 const FAQ = () => {
+    const [selectedQuestion, setSelectedQuestion] = useState(null);
+
       const faqData = [
       {
       question: 'How do I request a quote for a project?',
@@ -20,14 +23,22 @@ const FAQ = () => {
       answer: 'Yes, we offer website audit services and provide recommendations for optimization.'
     },
   ];
-
+const handleQuestionClick = (index) => {
+    setSelectedQuestion(index === selectedQuestion ? null : index);
+  };
       return (
-            <div className={style.faq}>
-      <h2>FAQ</h2>
+        <div className={style.faq}>
+          <Title text='FAQ'/>
       {faqData.map((item, index) => (
-        <div className="faq__item" key={index}>
-          <h3>{item.question}</h3>
-          <p>{item.answer}</p>
+        <div className={style.faqItem} key={index}>
+          <h3 className={style.faqQuestion}onClick={() => handleQuestionClick(index)}>
+            {item.question}
+          </h3>
+          <div className={style.faqAnswerDiv}>
+          {selectedQuestion === index && (
+            <p className={style.faqAnswer}>{item.answer}</p>
+            )}
+              </div>
         </div>
       ))}
     </div>

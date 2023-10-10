@@ -1,26 +1,28 @@
 .contactForm {
   max-width: 500px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: rgb(85, 90, 90, 0.4);
   padding: 50px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
 }
 
 .form {
   margin-bottom: 20px;
+  max-width: 100%;
 }
 
 .contactForm label {
   font-size: 16px;
-  color: #333;
+  color: #ffffff;
   display: block;
   margin-bottom: 8px;
 }
 
 .contactForm input,
 .contactFormtextarea {
-  width: 100%;
+  width: 96%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -28,21 +30,16 @@
 }
 
 .contactForm textarea {
-  height: 120px;
+  height: 100px;
+  width: 96%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-
-// .contact-form button {
-//   background-color: #ff6600;
-//   color: #fff;
-//   border: none;
-//   padding: 12px 20px;
-//   font-size: 16px;
-//   border-radius: 5px;
-//   cursor: pointer;
-//   display: block;
-//   width: 100%;
-// }
-
-// .contact-form button:hover {
-//   background-color: #dd5500;
-// }
+.contactForm select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

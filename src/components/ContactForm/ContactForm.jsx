@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import style from'./ContactForm.module.scss'
+import Title from 'components/Title/Title';
+import Button from 'components/Button/Button';
 const INIT_STATE = {
    name: '',
     email: '',
@@ -39,7 +41,7 @@ useEffect(() => {
   }
   return (
     <div className={style.contactForm}>
-      <h2>Contact Us</h2>
+      <Title text='CONTACT US'/>
       <form onSubmit={handleSubmit}>
         <div className={style.form}>
           <label htmlFor="contactMethod">Choose contact method:</label>
@@ -144,8 +146,7 @@ useEffect(() => {
             required
           ></textarea>
         </div>
-       
-        <button type="submit">Send</button>
+       <Button type="submit" text='Send'/>
       </form>
     </div>
   );

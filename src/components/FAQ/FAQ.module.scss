@@ -1,0 +1,35 @@
+.faq {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(85, 90, 90, 0.4);
+  border-radius: 38px;
+  border: transparent;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.faqItem {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.faqQuestion {
+  font-weight: bold;
+  margin: 0;
+}
+
+.faqAnswer {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.faqAnswerDiv {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 38px;
+  border: transparent;
+  padding: 3px;
+}

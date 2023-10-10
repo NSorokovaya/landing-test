@@ -37,8 +37,10 @@ const Services = () => {
   };
 
   return (
+    <div>
+            <Title text='SERVICES'/>
+
     <div className={style.services}>
-      <Title text='SERVICES'/>
     <ul className={style.servicesTitle}>
       {servicesData.map((service, index) => (
         <li key={index} onClick={() => handleClick(service)} className={style.servicesItem}>
@@ -55,7 +57,8 @@ const Services = () => {
 
       </div>
     )}
-  </div>
+        </div>
+      </div>
 );
 };
 
