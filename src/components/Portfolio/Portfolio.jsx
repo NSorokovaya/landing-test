@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Portfolio.css'; // Ваші стилі
+import style from'./Portfolio.module.scss'; 
 import Slide1 from '../../images/slide1.png';
 import Slide2 from '../../images/slide2.png';
 import Slide3 from '../../images/slide3.png';
@@ -40,10 +40,10 @@ const Portfolio = () => {
     <Slider {...settings}>
       {sliderItems.map((item, index) => (
         <div key={index}>
-          <div className="slider-item">
+          <div className={style.sliderItem}>
             <img src={item.imageSrc} alt={item.title} />
           </div>
-          <div className="slider-description">
+          <div className={style.sliderDescription}>
             <h3>{item.title}</h3>
             <p>{item.description}</p>
           </div>

@@ -1,3 +1,8 @@
+.advantages {
+}
+.advantages__list {
+  display: flex;
+}
 .animate__animated {
   opacity: 0;
 }

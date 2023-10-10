@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './ContactForm.css'
+import style from'./ContactForm.module.scss'
 const INIT_STATE = {
    name: '',
     email: '',
@@ -38,10 +38,10 @@ useEffect(() => {
     });
   }
   return (
-    <div className="contact-form">
+    <div className={style.contactForm}>
       <h2>Зворотній зв'язок</h2>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className={style.form}>
           <label htmlFor="contactMethod">Оберіть метод зв'язку:</label>
           <select
             id="contactMethod"
@@ -57,7 +57,7 @@ useEffect(() => {
           </select>
         </div>
         {formData.contactMethod === 'email' && (
-          <div className="form-group">
+          <div className={style.form}>
             <label htmlFor="name">Name:</label>
             <input
               type="text"
@@ -70,7 +70,7 @@ useEffect(() => {
           </div>
         )}
         {formData.contactMethod === 'email' && (
-          <div className="form-group">
+          <div className={style.form}>
             <label htmlFor="email">Email:</label>
             <input
               type="email"
@@ -83,7 +83,7 @@ useEffect(() => {
           </div>
         )}
         {formData.contactMethod !== 'email' && (
-          <div className="form-group">
+          <div className={style.form}>
             <label htmlFor="name">Name:</label>
             <input
               type="text"
@@ -96,7 +96,7 @@ useEffect(() => {
           </div>
         )}
          {formData.contactMethod === 'telegram' && (
-         <div className="form-group">
+         <div className={style.form}>
             <label htmlFor="nickname">Nickname:</label>
             <input
               type="text"
@@ -109,7 +109,7 @@ useEffect(() => {
           </div>
         )}
         {formData.contactMethod === 'viber' && (
-          <div className="form-group">
+          <div className={style.form}>
             <label htmlFor="phone">Phone:</label>
             <input
               type="tel"
@@ -122,7 +122,7 @@ useEffect(() => {
           </div>
         )}
         {formData.contactMethod === 'whatsapp' && (
-          <div className="form-group">
+          <div className={style.form}>
             <label htmlFor="phone">Phone:</label>
             <input
               type="tel"
@@ -134,7 +134,7 @@ useEffect(() => {
             />
           </div>
         )}
-        <div className="form-group">
+        <div className={style.form}>
           <label htmlFor="message">Message:</label>
           <textarea
             id="message"

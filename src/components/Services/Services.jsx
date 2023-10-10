@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Services.module.css';
+import style from'./Services.module.scss';
 const Services = () => {
   const [selectedService, setSelectedService] = useState(null);
 
@@ -35,21 +35,21 @@ const Services = () => {
   };
 
   return (
-  <div className="services">
+  <div className={style.services}>
     <h2>Services</h2>
-    <ul className='services__title'>
+    <ul className={style.servicesTitle}>
       {servicesData.map((service, index) => (
-        <li key={index} onClick={() => handleClick(service)} className="services__item">
+        <li key={index} onClick={() => handleClick(service)} className={style.servicesItem}>
           {service.title}
         </li>
       ))}
     </ul>
 
     {selectedService && (
-      <div className="selected-service">
-        <h3 className='selected-service__title'>{selectedService.title}</h3>
-          <p className='selected-service__description'>{selectedService.description}</p>
-          <button className="selected-service__button">Want</button>
+      <div className={style.selectedServiceItem}>
+        <h3 className={style.selectedServiceTitle}>{selectedService.title}</h3>
+          <p className={style.selectedServiceDescription}>{selectedService.description}</p>
+          <button className={style.selectedServiceButton}>Want</button> 
       </div>
     )}
   </div>

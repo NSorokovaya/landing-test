@@ -1,5 +1,6 @@
 import React from 'react';
 
+import style from './FAQ.module.scss'
 const FAQ = () => {
       const faqData = [
       {
@@ -20,8 +21,8 @@ const FAQ = () => {
     },
   ];
 
-  return (
-    <div className="faq">
+      return (
+            <div className={style.faq}>
       <h2>FAQ</h2>
       {faqData.map((item, index) => (
         <div className="faq__item" key={index}>

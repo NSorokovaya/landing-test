@@ -4,13 +4,13 @@ import 'animate.css';
 
   const WhyUs = () => {
   return (
-    <div className="advantages">
+    <div className="advantages ">
       <h2>Why Choose Us</h2>
       <h3>Our IT solutions in reliable hands</h3>
        <ul className="advantages__list ">
         <li className="advantages__item">
           <p>Extensive Expertise</p>
-          <div className="animate__animated ">
+          <div className={"animate__animated "}>
             <p> We boast a team of professionals with a wealth of experience and knowledge in diverse domains, allowing  to tackle a wide range of projects with confidence and precision.</p>
           </div>
         </li>
