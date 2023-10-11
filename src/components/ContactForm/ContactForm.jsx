@@ -56,6 +56,7 @@ const ContactForm = () => {
             Choose contact method:
           </label>
           <select
+            className={style.contactFormSelect}
             id="contactMethod"
             name="contactMethod"
             value={formData.contactMethod}
@@ -75,6 +76,7 @@ const ContactForm = () => {
               Name:
             </label>
             <input
+              className={style.contactFormInput}
               type="text"
               id="name"
               name="name"
@@ -90,6 +92,7 @@ const ContactForm = () => {
               Email:
             </label>
             <input
+              className={style.contactFormInput}
               type="email"
               id="email"
               name="email"
@@ -105,6 +108,7 @@ const ContactForm = () => {
               Name:
             </label>
             <input
+              className={style.contactFormInput}
               type="text"
               id="name"
               name="name"
@@ -120,6 +124,7 @@ const ContactForm = () => {
               Nickname:
             </label>
             <input
+              className={style.contactFormInput}
               type="text"
               id="nickname"
               name="nickname"
@@ -135,6 +140,7 @@ const ContactForm = () => {
               Phone:
             </label>
             <input
+              className={style.contactFormInput}
               type="tel"
               id="phone"
               name="phone"
@@ -150,6 +156,7 @@ const ContactForm = () => {
               Phone:
             </label>
             <input
+              className={style.contactFormInput}
               type="tel"
               id="phone"
               name="phone"
@@ -164,6 +171,7 @@ const ContactForm = () => {
             Message:
           </label>
           <textarea
+            className={style.contactFormTextarea}
             id="message"
             name="message"
             value={formData.message}

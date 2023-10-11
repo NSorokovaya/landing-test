@@ -5,7 +5,7 @@ import Button from 'components/Button/Button';
 
 const Modal = ({ show, onClose }) => {
   useEffect(() => {
-    const handleClickOutside = (e) => {
+    const handleClickOutside = e => {
       if (show && !e.target.closest(`.${style.modalContent}`)) {
         onClose();
       }
@@ -32,10 +32,9 @@ const Modal = ({ show, onClose }) => {
         <span className={style.close} onClick={onClose}>
           ×
         </span>
-                    <p>Have an idea? Get a free consultation</p>
-                                  <Button text='Want'/>
-
-              </div>
+        <p>Have an idea? Get a free consultation</p>
+        <Button text="Want" />
+      </div>
     </div>
   );
 };

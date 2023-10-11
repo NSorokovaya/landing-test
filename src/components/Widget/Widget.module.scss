@@ -23,14 +23,12 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     &:hover {
-      background-color: rgba(61, 28, 6, 0.4);
+      background-color: rgba(61, 28, 6, 0.8);
       font-size: 46px;
     }
   }
 
   .modal {
-    //     position: fixed;
-
     height: 100%;
     width: 100%;
     display: flex;

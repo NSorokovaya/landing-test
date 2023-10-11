@@ -20,8 +20,7 @@
   margin-bottom: 8px;
 }
 
-.contactForm input,
-.contactFormtextarea {
+.contactFormInput {
   width: 96%;
   padding: 10px;
   font-size: 16px;
@@ -29,14 +28,15 @@
   border-radius: 5px;
 }
 
-.contactForm textarea {
+.contactFormTextarea {
   height: 100px;
   width: 96%;
   padding: 10px;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-.contactForm select {
+.contactFormSelect {
   width: 100%;
   padding: 10px;
   font-size: 16px;

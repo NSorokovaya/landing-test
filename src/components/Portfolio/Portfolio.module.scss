@@ -3,6 +3,7 @@
   margin: 0 auto;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .sliderItem {
@@ -25,15 +26,15 @@
   opacity: 0;
   transform: translateY(100%);
   transition: opacity 0.5s, transform 0.5s;
-  h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  p {
-    font-size: 16px;
-  }
+}
+.sliderDescriptionTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
+.sliderDescriptionText {
+  font-size: 16px;
+}
 .sliderItem:hover .sliderDescription {
   opacity: 1;
   transform: translateY(0);
