@@ -1,7 +1,7 @@
 .button {
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: transparent;
   color: #fff;
   border: none;
   padding: 8px 16px;
@@ -11,9 +11,10 @@
   border-radius: 38px;
   margin: 0 auto;
   font-weight: bold;
+  border: 1px solid #ccc;
 
   &:hover {
-    background-color: rgba(61, 28, 6, 0.8);
+    background-color: rgba(0, 0, 0);
     font-size: 46px;
   }
 }
