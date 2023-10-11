@@ -18,7 +18,8 @@ const Footer = () => {
         <FaLinkedin className={style.img} />
       </a>
               <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" className={style.link}>
-        <FaTiktok className={style.img}/>
+        <FaTiktok className={style.img} />
+        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
       </a>
     </div>
   );

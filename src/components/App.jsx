@@ -5,15 +5,19 @@ import ServicesTab from './Services/Services';
 import ContactForm from './ContactForm/ContactForm';
 import Footer from './Footer/Footer'
 import FAQ from './FAQ/FAQ'
+import Widget from "./Widget/Widget";
 export const App = () => {
   return (
     <div>
+
       <HeaderArea />
+                  <Widget/>
+
       <WhyUs />
       <Portfolio />
       <ServicesTab />
       <ContactForm />
-      <FAQ/>
+      <FAQ />
       <Footer />
     </div>
   );
