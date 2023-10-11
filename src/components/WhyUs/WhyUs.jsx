@@ -11,11 +11,11 @@ const WhyUs = () => {
     },
     {
       title: 'Client-Centered Approach',
-      text: 'We place a strong emphasis on understanding and meeting the unique needs of each client. This client-centric approach ensures that solutions are tailored to specific requirements, fostering strong and lasting relationships.',
+      text: 'We place a strong emphasis on understanding and meeting the unique needs of each client. ',
     },
     {
       title: 'Innovative Solutions',
-      text: 'We are known for innovative approach to problem-solving. By staying at the forefront of industry trends and technologies, we consistently deliver cutting-edge solutions that drive tangible results.',
+      text: 'We are known for innovative approach to problem-solving. We consistently deliver cutting-edge solutions that drive tangible results.',
     },
     {
       title: 'Proven Track Record',
@@ -23,7 +23,7 @@ const WhyUs = () => {
     },
     {
       title: 'Effective Communication',
-      text: 'Open and transparent communication is a hallmark of our operations. You can expect clear and timely updates throughout the project lifecycle, ensuring that everyone is on the same page and well-informed.',
+      text: ' You can expect clear and timely updates throughout the project lifecycle, ensuring that everyone is on the same page and well-informed.',
     },
     {
       title: 'Commitment to Quality',
