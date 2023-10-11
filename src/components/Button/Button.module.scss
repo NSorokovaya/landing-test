@@ -12,9 +12,5 @@
   margin: 0 auto;
   font-weight: bold;
   border: 1px solid #ccc;
-
-  &:hover {
-    background-color: rgba(0, 0, 0);
-    font-size: 46px;
-  }
+  transition: background-color 0.3s;
 }
