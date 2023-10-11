@@ -1,0 +1,35 @@
+.hero {
+  margin-bottom: 70px;
+  padding: 100px;
+}
+
+.heroText {
+  margin: 0 auto;
+  font-size: 26px;
+  font-weight: bold;
+  border: 1px solid rgb(204, 204, 204, 0.4);
+  border-radius: 38px;
+  overflow: hidden;
+  padding: 50px;
+  @media screen and (min-width: 780px) {
+    padding: 100px;
+    font-size: 40px;
+  }
+}
+.heroTitle {
+  text-align: center;
+}
+.heroButton {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 36px;
+  cursor: pointer;
+  border-radius: 38px;
+  margin: 0 auto;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  gap: 15px;
+}

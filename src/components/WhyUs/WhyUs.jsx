@@ -42,7 +42,7 @@ const WhyUs = () => {
   });
 
   return (
-    <div className={style.advantages}>
+    <div className={style.advantages} id="whyus">
       <Title text="Why Us?" />
       <ul className={style.advantagesList}>
         {Advantages.map((advantage, index) => (

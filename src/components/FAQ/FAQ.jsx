@@ -33,7 +33,7 @@ const FAQ = () => {
     setSelectedQuestion(index === selectedQuestion ? null : index);
   };
   return (
-    <div className={style.faq}>
+    <div className={style.faq} id="faq">
       <Title text="FAQ" />
       {faqData.map((item, index) => (
         <div className={style.faqItem} key={index}>

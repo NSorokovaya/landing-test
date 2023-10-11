@@ -3,8 +3,12 @@
   justify-content: center;
   margin-top: 20px;
   color: rgb(255, 255, 255);
-  gap: 50px;
   margin-bottom: 20px;
+  gap: 20px;
+
+  @media screen and (min-width: 780px) {
+    gap: 50px;
+  }
 }
 
 .link {

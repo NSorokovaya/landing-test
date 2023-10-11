@@ -42,7 +42,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className={style.portfolio}>
+    <div className={style.portfolio} id="portfolio">
       <Title text="PORTFOLIO" />
       <Slider {...settings}>
         {sliderItems.map((item, index) => (

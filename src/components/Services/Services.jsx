@@ -44,7 +44,7 @@ const Services = () => {
   };
 
   return (
-    <div>
+    <div id="services">
       <Title text="SERVICES" />
 
       <div className={style.services}>

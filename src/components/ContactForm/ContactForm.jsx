@@ -48,7 +48,7 @@ const ContactForm = () => {
     { value: 'viber', label: 'Viber' },
   ];
   return (
-    <div className={style.contactForm}>
+    <div className={style.contactForm} id="contact">
       <Title text="CONTACT US" />
       <form onSubmit={handleSubmit}>
         <div className={style.form}>
