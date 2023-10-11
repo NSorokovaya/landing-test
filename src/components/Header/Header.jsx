@@ -23,10 +23,28 @@ export const HeaderArea = () => {
     transform: 'scale(1)',
   }));
 
+  const animatedStyle = useSpring({
+    from: { background: '#ff6d6d', y: -200, x: 0 },
+    to: async (next, cancel) => {
+      await next({ x: 1300, background: '#fff59a' });
+      await next({ y: 400, background: '#88DFAB' });
+      await next({ x: 100, background: '#569AFF' });
+      await next({ y: -200, background: '#ff6d6d' });
+    },
+    loop: true,
+  });
   return (
-    <div className={style.header}>
+    <animated.div className={style.header}>
       <Logo width={150} />
       <div className={style.headerText}>
+        <animated.div
+          style={{
+            width: 100,
+            height: 100,
+            borderRadius: 4,
+            ...animatedStyle,
+          }}
+        />
         <animated.h2 style={fadeIn} className={style.headerTitle}>
           Our IT solutions in reliable hands
         </animated.h2>
@@ -40,6 +58,6 @@ export const HeaderArea = () => {
           <FaLongArrowAltRight />
         </animated.button>
       </div>
-    </div>
+    </animated.div>
   );
 };
