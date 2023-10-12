@@ -5,7 +5,7 @@ import style from './Header.module.scss';
 const Header = () => {
   const navItems = [
     { text: 'Why Us?', link: '#whyus' },
-    { text: 'Service', link: 'service' },
+    { text: 'Service', link: '#services' },
     { text: 'Portfolio', link: '#portfolio' },
     { text: 'Contact Us', link: '#contact' },
     { text: 'FAQ', link: '#faq' },

@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className={style.links}>
       <a
-        href="https://www.facebook.com/"
+        href="https://www.facebook.com/people/VNV-Solutions/100088433736254/"
         target="_blank"
         rel="noopener noreferrer"
         className={style.link}
@@ -20,7 +20,7 @@ const Footer = () => {
         <FaFacebook className={style.img} />
       </a>
       <a
-        href="https://www.instagram.com/"
+        href="https://www.instagram.com/vnv_solutions/?igshid=MWI4MTIyMDE%3D"
         target="_blank"
         rel="noopener noreferrer"
         className={style.link}
@@ -28,7 +28,7 @@ const Footer = () => {
         <FaInstagram className={style.img} />
       </a>
       <a
-        href="https://telegram.org/"
+        href="https://t.me/vnv_solutions"
         target="_blank"
         rel="noopener noreferrer"
         className={style.link}
@@ -36,7 +36,7 @@ const Footer = () => {
         <FaTelegram className={style.img} />
       </a>
       <a
-        href="https://www.linkedin.com/"
+        href="https://www.linkedin.com/company/vnv-tech/"
         target="_blank"
         rel="noopener noreferrer"
         className={style.link}
@@ -44,7 +44,7 @@ const Footer = () => {
         <FaLinkedin className={style.img} />
       </a>
       <a
-        href="https://www.tiktok.com/"
+        href="https://www.tiktok.com/@vnvsolutions?_t=8YVB28bloQP&_r=1"
         target="_blank"
         rel="noopener noreferrer"
         className={style.link}

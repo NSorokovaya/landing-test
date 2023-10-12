@@ -1,12 +1,12 @@
 .advantages {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-transform: uppercase;
 
   @media screen and (min-width: 780px) {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
   @media screen and (min-width: 1280px) {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
 }
 .advantagesList {
@@ -14,11 +14,10 @@
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   margin-right: 0;
   margin-top: 32px;
   @media screen and (min-width: 780px) {
-    margin-bottom: 60px;
     gap: 32px;
   }
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import style from './Services.module.scss';
 import Title from 'components/Title/Title';
 import Button from 'components/Button/Button';
+
 const Services = () => {
   const servicesData = [
     {

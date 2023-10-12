@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import Title from '../Title/Title';
 import style from './WhyUs.module.scss';
+import Button from 'components/Button/Button';
 
 const WhyUs = () => {
   const Advantages = [
@@ -65,6 +66,7 @@ const WhyUs = () => {
           </li>
         ))}
       </ul>
+      <Button text="Order now!" />
     </div>
   );
 };
