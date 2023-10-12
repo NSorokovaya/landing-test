@@ -4,9 +4,7 @@ const NotFound = () => {
   return (
     <>
       <div className={css.page}>
-        <div className={css.not}>
-          <div className={css.four}>Error 404</div>
-        </div>
+        <div className={css.four}>Error 404</div>
         <a href="/landing-test/" className={css.button}>
           Go home
         </a>
