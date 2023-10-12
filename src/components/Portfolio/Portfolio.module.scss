@@ -17,16 +17,20 @@
 }
 
 .sliderDescription {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  width: 100%;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: opacity 0.5s, transform 0.5s;
+  display: none;
+  @media screen and (min-width: 780px) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s, transform 0.5s;
+  }
 }
 .sliderDescriptionTitle {
   font-size: 24px;
